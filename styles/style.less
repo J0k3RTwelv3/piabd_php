@@ -1,0 +1,139 @@
+@import "./kolory.less";
+@import "./czcionki.less";
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#naglowek {
+
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+    border: 1px solid lightgray;
+    position: fixed;
+    height: 60px;
+    z-index: 9999;
+
+    h1 {
+        color: @kolorGlowny;
+    }
+
+    >div {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+
+        >p {
+            padding: 10px;
+        }
+    }
+}
+
+body {
+    overflow-y: scroll;
+}
+
+.srodek {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+}
+
+main {
+    margin-top: 60px;
+}
+
+.m0 {
+    margin: 0px !important;
+}
+
+.tsrodek {
+    text-align: center !important;
+}
+
+.wypelnij {
+    width: -moz-available !important;
+    width: -webkit-fill-available !important;
+}
+
+input {
+    margin: 5px 0px !important;
+}
+
+.nieprawidlowe {
+    border: 1px solid red !important;
+    color: red !important;
+}
+
+.prawidlowe {
+    border: 1px solid green !important;
+    color: green !important;
+}
+
+.martop {
+    margin-top: 10px !important;
+}
+
+#widokLekcji {
+    margin: 10px !important;
+    display: flex;
+
+    >div {
+        margin: 10px !important;
+    }
+}
+
+#widokStronyLekcji {
+    padding: 10px;
+
+    overflow: auto;
+
+    h3 {
+        margin: 5px 0px;
+    }
+
+    code:not(pre > code), pre {
+        margin: auto 3px;
+        padding: 0px 3px;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        color: rgb(255, 0, 255);
+    }
+
+    ul, ol, dl {
+        list-style-position: inside;
+    }
+
+    .description {
+        margin: 30px 0px;
+    }
+
+    #postep {
+        margin-bottom: 5px;
+    }
+
+    #postepTekst {
+        margin-top: 0px;
+    }
+
+    #przyciski {
+        display: flex;
+        margin: 14px;
+        
+        a {
+            margin: 0px 5px;
+        }
+    }
+}
